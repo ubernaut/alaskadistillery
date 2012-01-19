@@ -28,6 +28,19 @@ h2 {
    left: 10px;
    padding-left:inherit
 }
+#container {
+    position: relative;
+    height: 768px;
+    width: 1024px;
+    border: 1px solid;
+    align: center;
+    margin:0 auto;
+}
+#floater {
+    position: absolute;
+    bottom: 24px;
+    left: 28px;
+}
 
 <!--#content {position:relative; z-index:1; padding:10px;}-->
 </style><!--[if IE 6]> <style type="text/css"> html {overflow-y:hidden;} body {overflow-y:auto;} #page-background {position:absolute; z-index:-1;} #content {position:static;padding:10px;}
@@ -38,22 +51,25 @@ margin-right: auto;
 </style> <![endif]--></head>
 <body style="postion:relative">
 
-  <div id="page-background" align="center" >
-  <img src="images/background2.jpg" style="height: 768px; width: 1024px;position: relative" usemap="#linkmap">
+<div id="container" align="center" >
+  <img src="images/background.jpg" style="height: 768px; width: 1024px;position: relative" usemap="#linkmap">
 
-<map name="linkmap">
-  <area shape="rect" coords="797,1,1020,163" alt="App" href="http://itunes.apple.com/app/alaska-distillery/id491149229?mt=8#" />
-  <area shape="rect" coords="705,580,799,684" alt="Facebook" href="http://www.facebook.com/AKDistillery" />
-  <area shape="rect" coords="802,580,896,684" alt="Twitter" href="https://twitter.com/AK_Distillery" />
-  <area shape="rect" coords="25,586,369,612" alt="Info" href="mailto:info@alaskadistillery.com" />
-  <area shape="rect" coords="25,611,369,637" alt="Info" href="mailto:sales@alaskadistillery.com" />
-  <area shape="rect" coords="25,636,369,662" alt="Info" href="mailto:bella@alaskadistillery.com" />
-  <area shape="rect" coords="25,661,369,687" alt="Info" href="mailto:media@alaskadistillery.com" />
+	<map name="linkmap">
+	  <area shape="rect" coords="797,1,1020,163" alt="App" href="http://itunes.apple.com/app/alaska-distillery/id491149229?mt=8#" />
+	  <area shape="rect" coords="705,580,799,684" alt="Facebook" href="http://www.facebook.com/AKDistillery" />
+	  <area shape="rect" coords="802,580,896,684" alt="Twitter" href="https://twitter.com/AK_Distillery" />
+	  <area shape="rect" coords="25,586,369,612" alt="Info" href="mailto:info@alaskadistillery.com" />
+	  <area shape="rect" coords="25,611,369,637" alt="Info" href="mailto:sales@alaskadistillery.com" />
+	  <area shape="rect" coords="25,636,369,662" alt="Info" href="mailto:bella@alaskadistillery.com" />
+	  <area shape="rect" coords="25,661,369,687" alt="Info" href="mailto:media@alaskadistillery.com" />
+	
+	</map>
 
-</map>
+	<div id="floater">
+	<!--         I'm floating -->
+	<script type="text/javascript" src="http://app.icontact.com/icp/loadsignup.php/form.js?c=559718&l=1912&f=4585"></script>
+	<span class="link">Sign up for newsletter</span>
+    </div>
 
-
-</div>
-  <script type="text/javascript" src="http://app.icontact.com/icp/loadsignup.php/form.js?c=559718&l=1912&f=4585"></script>
-
+  </div>
 </body></html>
