@@ -7,16 +7,46 @@
 		#content {position:absolute; width: 100%; text-align:center; height: 972px" }
 		#floater {
 			    position: absolute;
-			    bottom: 80px;
-			    left: 40%;
-			    right: 40%;
+			    bottom: 136px;
+			    text-align:center;
+			    right:50px;
+			    left: 50px;
 				}
 		.newsletter {
 				color: white;
 				font-family: Arial, Helvetica, sans-serif;
 				font-size: 13px;
-				position:relative
+				position:absolute
 				}
+				
+				
+		.link,
+		.link a,
+		.signupframe
+		{
+			color: #226699;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			}
+			.link,
+			.link a {
+				text-decoration: none;
+				}
+			.signupframe {
+				border: 1px solid #000000;
+				background: #ffffff;
+				}
+		.signupframe .required {
+			font-size: 10px;
+			}
+		
+		.signup
+		{
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			}
+	
 		
 	</style>
 </head>
@@ -25,7 +55,7 @@
 
 		<div id="page-background">
 			<div id="content">
-				<img src="images/alaska_distillery_web_everything_else_4.png" usemap="#linkmap" >
+				<img src="images/alaska_distillery_web_everything_else_6.png" usemap="#linkmap" >
 				<map name="linkmap">
 
 					<area shape="rect" coords="120,209,268,354" alt="Distillery" href="index.html" />
@@ -42,17 +72,84 @@
 					<area shape="rect" coords="624,854,794,910" alt="App" href="http://itunes.apple.com/app/alaska-distillery/id491149229?mt=8#" />
 					
 				</map>
-				
+
 				<div id="floater">
-					<!--         I'm floating -->
-					<script type="text/javascript" src="http://app.icontact.com/icp/loadsignup.php/form.js?c=559718&l=1912&f=4585"></script>
-					<span class="newsletter">Sign up for newsletter</span>
+
+					<form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup4608" accept-charset="UTF-8" onsubmit="return verifyRequired4608();" >
+						<input type="hidden" name="redirect" value="http://www.icontact.com/www/signup/thanks.html">
+						<input type="hidden" name="errorredirect" value="http://www.icontact.com/www/signup/error.html">
+						
+						<input type="text" name="fields_email" value="ENTER EMAIL" onfocus="if (this.value=='ENTER EMAIL') this.value = ''" size="25">
+						
+						
+						<input type="hidden" name="listid" value="2334">
+					    <input type="hidden" name="specialid:2334" value="FS8H">
+					
+					    <input type="hidden" name="clientid" value="559718">
+					    <input type="hidden" name="formid" value="4608">
+					    <input type="hidden" name="reallistid" value="1">
+					    <input type="hidden" name="doubleopt" value="0">
+						
+						<input type="submit" name="Submit" value="Submit">
+						    
+						<!-- <div id="SignUp">
+						<table width="260" class="signupframe" border="0" cellspacing="0" cellpadding="5">
+							<tr>
+						      <td valign="top" align="right">
+						        <span class="required">*</span>Email
+						      </td>
+						      <td align="left">
+						        <input type="text" name="fields_email" value="ENTER EMAIL" onfocus="if (this.value=='ENTER EMAIL') this.value = ''" >
+						      </td>
+						    </tr>
+						    <input type="hidden" name="listid" value="2334">
+						    <input type="hidden" name="specialid:2334" value="FS8H">
+						
+						    <input type="hidden" name="clientid" value="559718">
+						    <input type="hidden" name="formid" value="349">
+						    <input type="hidden" name="reallistid" value="1">
+						    <input type="hidden" name="doubleopt" value="1">
+						    <tr>
+						      <td></td>
+						      <td><span class="required">*</span> = Required Field</td>
+						    </tr>
+						    <tr>
+						      <td></td>
+						      <td><input type="submit" name="Submit" value="Submit"></td>
+						    </tr>
+						    </table>
+						</div> -->
+						</form>
+						<script type="text/javascript">
+
+							var icpForm4608 = document.getElementById('icpsignup4608');
+							
+							if (document.location.protocol === "https:")
+							
+								icpForm4608.action = "https://app.icontact.com/icp/signup.php";
+							function verifyRequired4608() {
+							  if (icpForm4608["fields_email"].value == "") {
+							    icpForm4608["fields_email"].focus();
+							    alert("The Email field is required.");
+							    return false;
+							  }
+							
+							
+							return true;
+							}
+							</script>
+						
+						<span class="signup">NEWSLETTER SIGN UP</span>
+						
+<!-- 						<span class="link"><a href="http://www.icontact.com">Email Marketing</a> You Can Trust</span> -->
+				
 			    </div>
 				
 		  </div>
 				<img src="images/alaska_distillery_web_background.jpg" width="100%" height="972px">
 				
-				
 		</div>
+		
+		
 
 </body></html>
