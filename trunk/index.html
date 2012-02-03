@@ -15,14 +15,29 @@
 		  $('map area').click(function(){
 		   	//alert($(this).attr('alt'));
 			// show menu item
-		   	$('#menu_item').show();
-			
+
+            if($(this).attr('alt')=='Distillery')
+            {
+            	$("#menu_image").attr("src","images/distillery_pullout.png");
+            	$('#distillery_menu_item').show("normal");	
+            }
+            else if($(this).attr('alt')=='Products')
+            {  
+                $("#menu_image").attr("src","images/products_pullout.png");
+            	$('#distillery_menu_item').show("normal");	
+            }
+            else if($(this).attr('alt')=='Glaciers')
+            {  
+                $("#menu_image").attr("src","images/glacier_pullout.png");
+            	$('#distillery_menu_item').show("normal");	
+            }
+		   	
 		  	return false;
 		  });
-		  $('#menu_item').click(function(){
+		  $('#distillery_menu_item').click(function(){
 			   	//alert($(this).attr('alt'));
 				// show menu item
-			   	$('#menu_item').hide();
+			   	$('#distillery_menu_item').hide('normal');
 				
 			  	return false;
 			});
@@ -99,8 +114,8 @@
 		    </div> <!-- end div floater -->
 		</div> <!-- end div content -->
 		
-		<div id="menu_item" >
-			<img src="images/distillery_pullout.png" >
+		<div id="distillery_menu_item" >
+			<img id="menu_image" src="images/distillery_pullout.png" >
 		</div>
 		
 	
