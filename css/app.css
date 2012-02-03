@@ -2,3 +2,50 @@
 	font-family:arail;
 	
 }
+
+		body {height:100%}
+		#page-background {position:absolute	; top:0; left:0; width:100%; display: block; }
+		#content {position:absolute; width: 100%; text-align:center; height: 972px }
+		#menu_item {position:absolute; width: 100%; text-align:center; top: 210px; visibility: hidden }
+		
+		#floater {
+			    position: absolute;
+			    bottom: 136px;
+			    text-align:center;
+			    right:50px;
+			    left: 50px;
+				}
+		.newsletter {
+				color: white;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 13px;
+				position:absolute
+				}
+				
+				
+		.link,
+		.link a,
+		.signupframe
+		{
+			color: #226699;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			}
+			.link,
+			.link a {
+				text-decoration: none;
+				}
+			.signupframe {
+				border: 1px solid #000000;
+				background: #ffffff;
+				}
+		.signupframe .required {
+			font-size: 10px;
+			}
+		
+		.signup
+		{
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			}
