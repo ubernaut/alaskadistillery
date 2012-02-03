@@ -1,155 +1,105 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head><title>Alaska Distillery</title>
-
-	<style type="text/css">
-		body {height:100%}
-		#page-background {position:absolute	; top:0; left:0; width:100%; display: block; }
-		#content {position:absolute; width: 100%; text-align:center; height: 972px" }
-		#floater {
-			    position: absolute;
-			    bottom: 136px;
-			    text-align:center;
-			    right:50px;
-			    left: 50px;
-				}
-		.newsletter {
-				color: white;
-				font-family: Arial, Helvetica, sans-serif;
-				font-size: 13px;
-				position:absolute
-				}
-				
-				
-		.link,
-		.link a,
-		.signupframe
-		{
-			color: #226699;
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 13px;
-			}
-			.link,
-			.link a {
-				text-decoration: none;
-				}
-			.signupframe {
-				border: 1px solid #000000;
-				background: #ffffff;
-				}
-		.signupframe .required {
-			font-size: 10px;
-			}
-		
-		.signup
-		{
-			color: white;
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 13px;
-			}
-	
-		
-	</style>
+<html>
+<head>
+	<title>Alaska Distillery</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
 </head>
 
 <body>
+	<!-- Jquery -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	
+	$(function(){
+		
+		  $('map area').click(function(){
+		   	alert($(this).attr('alt'));
+			// show menu item
+		   	$('.menu_item').show();
+		  	return false;
+		  });
+	});
+	
+	</script>
 
-		<div id="page-background">
-			<div id="content">
-				<img src="images/alaska_distillery_web_everything_else_6.png" usemap="#linkmap" >
-				<map name="linkmap">
+	
+	<div id="page-background">
+	
+		<div id="content">
+		
+			<img src="images/alaska_distillery_web_everything_else_6.png" usemap="#linkmap" >
+			
+			<map name="linkmap">
 
-					<area shape="rect" coords="120,209,268,354" alt="Distillery" href="index.html" />
-					<area shape="rect" coords="330,209,478,354" alt="Products" href="index.html" />
-					<area shape="rect" coords="528,210,676,355" alt="Glaciers" href="index.html" />
-					<area shape="rect" coords="120,399,268,544" alt="Gallery" href="index.html" />
-					<area shape="rect" coords="330,398,478,543" alt="Media Link" href="index.html" />
-					<area shape="rect" coords="528,398,676,543" alt="Distributors" href="index.html" />
-					<area shape="rect" coords="120,588,268,733" alt="Contact" href="index.html" />
-					<area shape="rect" coords="330,588,478,733" alt="Recipes" href="index.html" />
-					<area shape="rect" coords="530,591,678,736" alt="Store" href="index.html" />
-					<area shape="rect" coords="126,848,178,905" alt="Twitter" href="https://twitter.com/AK_Distillery" />
-					<area shape="rect" coords="179,849,231,906" alt="Facebook" href="http://www.facebook.com/AKDistillery" />
-					<area shape="rect" coords="624,854,794,910" alt="App" href="http://itunes.apple.com/app/alaska-distillery/id491149229?mt=8#" />
+				<area shape="rect" coords="120,209,268,354" alt="Distillery" href="index.html" />
+				<area shape="rect" coords="330,209,478,354" alt="Products" href="index.html" />
+				<area shape="rect" coords="528,210,676,355" alt="Glaciers" href="index.html" />
+				<area shape="rect" coords="120,399,268,544" alt="Gallery" href="index.html" />
+				<area shape="rect" coords="330,398,478,543" alt="Media Link" href="index.html" />
+				<area shape="rect" coords="528,398,676,543" alt="Distributors" href="index.html" />
+				<area shape="rect" coords="120,588,268,733" alt="Contact" href="index.html" />
+				<area shape="rect" coords="330,588,478,733" alt="Recipes" href="index.html" />
+				<area shape="rect" coords="530,591,678,736" alt="Store" href="index.html" />
+				<area shape="rect" coords="126,848,178,905" alt="Twitter" href="https://twitter.com/AK_Distillery" />
+				<area shape="rect" coords="179,849,231,906" alt="Facebook" href="http://www.facebook.com/AKDistillery" />
+				<area shape="rect" coords="624,854,794,910" alt="App" href="http://itunes.apple.com/app/alaska-distillery/id491149229?mt=8#" />
+				
+			</map>
+
+			<div id="floater">
+
+				<form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup4608" accept-charset="UTF-8" onsubmit="return verifyRequired4608();" >
+					<input type="hidden" name="redirect" value="http://www.icontact.com/www/signup/thanks.html">
+					<input type="hidden" name="errorredirect" value="http://www.icontact.com/www/signup/error.html">
 					
-				</map>
+					<!-- Input text box -->
+					<input type="text" name="fields_email" value="ENTER EMAIL" onfocus="if (this.value=='ENTER EMAIL') this.value = ''" size="25">
 
-				<div id="floater">
-
-					<form method="post" action="https://app.icontact.com/icp/signup.php" name="icpsignup" id="icpsignup4608" accept-charset="UTF-8" onsubmit="return verifyRequired4608();" >
-						<input type="hidden" name="redirect" value="http://www.icontact.com/www/signup/thanks.html">
-						<input type="hidden" name="errorredirect" value="http://www.icontact.com/www/signup/error.html">
-						
-						<input type="text" name="fields_email" value="ENTER EMAIL" onfocus="if (this.value=='ENTER EMAIL') this.value = ''" size="25">
-						
-						
-						<input type="hidden" name="listid" value="2334">
-					    <input type="hidden" name="specialid:2334" value="FS8H">
+					<input type="hidden" name="listid" value="2334">
+				    <input type="hidden" name="specialid:2334" value="FS8H">
+				    <input type="hidden" name="clientid" value="559718">
+				    <input type="hidden" name="formid" value="4608">
+				    <input type="hidden" name="reallistid" value="1">
+				    <input type="hidden" name="doubleopt" value="0">
 					
-					    <input type="hidden" name="clientid" value="559718">
-					    <input type="hidden" name="formid" value="4608">
-					    <input type="hidden" name="reallistid" value="1">
-					    <input type="hidden" name="doubleopt" value="0">
-						
-						<input type="submit" name="Submit" value="Submit">
-						    
-						<!-- <div id="SignUp">
-						<table width="260" class="signupframe" border="0" cellspacing="0" cellpadding="5">
-							<tr>
-						      <td valign="top" align="right">
-						        <span class="required">*</span>Email
-						      </td>
-						      <td align="left">
-						        <input type="text" name="fields_email" value="ENTER EMAIL" onfocus="if (this.value=='ENTER EMAIL') this.value = ''" >
-						      </td>
-						    </tr>
-						    <input type="hidden" name="listid" value="2334">
-						    <input type="hidden" name="specialid:2334" value="FS8H">
-						
-						    <input type="hidden" name="clientid" value="559718">
-						    <input type="hidden" name="formid" value="349">
-						    <input type="hidden" name="reallistid" value="1">
-						    <input type="hidden" name="doubleopt" value="1">
-						    <tr>
-						      <td></td>
-						      <td><span class="required">*</span> = Required Field</td>
-						    </tr>
-						    <tr>
-						      <td></td>
-						      <td><input type="submit" name="Submit" value="Submit"></td>
-						    </tr>
-						    </table>
-						</div> -->
-						</form>
-						<script type="text/javascript">
+					<input type="submit" name="Submit" value="Submit">
 
-							var icpForm4608 = document.getElementById('icpsignup4608');
-							
-							if (document.location.protocol === "https:")
-							
-								icpForm4608.action = "https://app.icontact.com/icp/signup.php";
-							function verifyRequired4608() {
-							  if (icpForm4608["fields_email"].value == "") {
-							    icpForm4608["fields_email"].focus();
-							    alert("The Email field is required.");
-							    return false;
-							  }
-							
-							
-							return true;
-							}
-							</script>
+					</form>
+					<!-- Javascript --> 
+					<script type="text/javascript">
+
+						var icpForm4608 = document.getElementById('icpsignup4608');
 						
-						<span class="signup">NEWSLETTER SIGN UP</span>
+						if (document.location.protocol === "https:")
 						
-<!-- 						<span class="link"><a href="http://www.icontact.com">Email Marketing</a> You Can Trust</span> -->
-				
-			    </div>
-				
-		  </div>
-				<img src="images/alaska_distillery_web_background.jpg" width="100%" height="972px">
-				
+							icpForm4608.action = "https://app.icontact.com/icp/signup.php";
+						function verifyRequired4608() {
+						  if (icpForm4608["fields_email"].value == "") {
+						    icpForm4608["fields_email"].focus();
+						    alert("The Email field is required.");
+						    return false;
+						  }
+						
+						
+						return true;
+						}
+						</script>
+					
+					<span class="signup">NEWSLETTER SIGN UP</span>
+
+		    </div> <!-- end div floater -->
+		</div> <!-- end div content -->
+		
+		<div id="menu_item" >
+			<img src="images/distillery_pullout.png" >
 		</div>
 		
-		
+	
+		<!-- page background -->
+		<img src="images/alaska_distillery_web_background.jpg" width="100%" height="972px">
+			
+	</div> <!-- end div page-background -->
 
+	
+		
 </body></html>
