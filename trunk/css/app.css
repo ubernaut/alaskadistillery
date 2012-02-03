@@ -6,7 +6,7 @@
 		body {height:100%}
 		#page-background {position:absolute	; top:0; left:0; width:100%; display: block; }
 		#content {position:absolute; width: 100%; text-align:center; height: 972px }
-		#menu_item {position:absolute; width: 100%; text-align:center; top: 210px;  }
+		#menu_item {position:absolute; width: 100%; text-align:center; top: 210px; display: none }
 		
 		#floater {
 			    position: absolute;
