@@ -18,16 +18,19 @@
 
             if($(this).attr('alt')=='Distillery')
             {
+            	jQuery.fx.off = true;	
             	$("#menu_image").attr("src","images/distillery_pullout.png");
             	$('#distillery_menu_item').show("normal");	
             }
             else if($(this).attr('alt')=='Products')
             {  
+            	jQuery.fx.off = true;
                 $("#menu_image").attr("src","images/products_pullout.png");
             	$('#distillery_menu_item').show("normal");	
             }
             else if($(this).attr('alt')=='Glaciers')
             {  
+            	jQuery.fx.off = true;
                 $("#menu_image").attr("src","images/glacier_pullout.png");
             	$('#distillery_menu_item').show("normal");	
             }
